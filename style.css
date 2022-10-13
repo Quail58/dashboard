@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 @font-face {
@@ -29,15 +30,18 @@
     align-self: center;
 }
 
-a:link, a:visited, a:hover, a:active {
+.sidebar_item > a:link, .sidebar_item > a:visited, .sidebar_item > a:hover, .sidebar_item > a:active {
     color:#be185d;
     text-decoration: none;
-    padding-left: 5px;
 }
-.nav > div, .utility > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.sidebar_item > a {
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.sidebar_item > img {
+    position: relative;
+    top: 4px;
 }
 
 .nav, .utility {
@@ -60,6 +64,8 @@ a:link, a:visited, a:hover, a:active {
 .top_bar{
     background-color: #be185d;
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 .main_content {
