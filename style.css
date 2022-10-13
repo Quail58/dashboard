@@ -20,6 +20,7 @@
     display: grid;
     grid-template-rows: 2fr 4fr 3fr;
     color: #be185d;
+    font-weight: bolder;
 }
 
 .logo {
@@ -66,10 +67,91 @@
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    color:#171717;
+    font-weight: bolder;
+}
+.search {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.search_bar{
+    background: #a3a3a3;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+    height: 30px;
+}
+
+.profile {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.profile > p {
+    width: 150px;
+    padding-left: 15px;
+}
+
+.small_profile {
+    height: 50px;
+    width: auto;
+}
+
+.welcome_img > img{
+    height: 100px;
+    width: auto;
+}
+
+.welcome {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.hello-names {
+    margin-left: 15px;
+}
+
+.hi {
+    font-size: 15px;
+}
+
+.nametag {
+    font-size: 25px;
+}
+
+.post {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 15px;
+    align-items: center;
+}
+.post > button {
+    height: 3rem;
+    width: 5rem;
+    border: none;
+    border-radius: 25px;
+    margin-right: 15px;
+    background-color:#a3a3a3;
 }
 
 .main_content {
     background-color: #a3a3a3;
     color: white;
     grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template: 1fr 15fr / 3fr 1fr;
 }
+
