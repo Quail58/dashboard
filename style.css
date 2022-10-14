@@ -29,12 +29,14 @@
     display: flex;
     justify-self: center;
     align-self: center;
+    border-bottom: ;
 }
 
 .sidebar_item > a:link, .sidebar_item > a:visited, .sidebar_item > a:hover, .sidebar_item > a:active {
     color:#be185d;
     text-decoration: none;
 }
+
 .sidebar_item > a {
     padding-left: 5px;
     font-size: 20px;
@@ -69,6 +71,8 @@
     grid-template-columns: 3fr 1fr;
     color:#171717;
     font-weight: bolder;
+    box-shadow: 2px 5px 10px black;
+    position: relative;
 }
 .search {
     grid-area: 1 / 1 / 2 / 2;
@@ -105,11 +109,13 @@
 .small_profile {
     height: 50px;
     width: auto;
+    border-radius: 100px;
 }
 
 .welcome_img > img{
     height: 100px;
     width: auto;
+    border-radius: 100px;
 }
 
 .welcome {
@@ -162,17 +168,25 @@
     margin: 20px;
 }
 
+.projects_top {
+    margin-bottom: 10px;
+}
+
 .project_bubbles {
     font-size: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
-    gap: 15px;
+    gap: 50px;
 }
 
 .bubble {
     background-color: #171717;
     padding: 40px;
     font-size: medium;
+    border-radius: 25px;
+    box-shadow: 5px 3px 5px #831843;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
 }
 
 .announcements {
