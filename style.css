@@ -159,13 +159,20 @@
 }
 
 .projects {
-    gap: 15px;
-    justify-self: left;
+    margin: 20px;
 }
 
 .project_bubbles {
     font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
+    gap: 15px;
+}
+
+.bubble {
     background-color: #171717;
+    padding: 40px;
+    font-size: medium;
 }
 
 .announcements {
