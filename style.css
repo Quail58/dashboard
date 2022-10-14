@@ -29,7 +29,6 @@
     display: flex;
     justify-self: center;
     align-self: center;
-    border-bottom: ;
 }
 
 .sidebar_item > a:link, .sidebar_item > a:visited, .sidebar_item > a:hover, .sidebar_item > a:active {
@@ -184,9 +183,23 @@
     padding: 40px;
     font-size: medium;
     border-radius: 25px;
-    box-shadow: 5px 3px 5px #831843;
+    box-shadow: 5px 3px 10px black;
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
+    border-left: solid 10px #be185d;
+}
+
+.bubble_head{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bubble_body {
+    opacity: .5;
+}
+
+.project_images {
+    justify-self: right;
 }
 
 .announcements {
