@@ -152,6 +152,24 @@
     color: white;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template: 1fr 15fr / 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    color: #be185d;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.projects {
+    gap: 15px;
+    justify-self: left;
+}
+
+.project_bubbles {
+    font-size: 20px;
+    background-color: #171717;
+}
+
+.announcements {
+    gap: 15px;
+    justify-self: center;
 }
 
