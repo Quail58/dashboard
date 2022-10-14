@@ -230,3 +230,7 @@
 .border_bottom {
     border-bottom: #a3a3a3 1px solid;
 }
+
+button:hover {
+    background-color: #6b6b6b;
+}
